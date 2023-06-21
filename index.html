@@ -6,29 +6,70 @@
 </head>
 <body>
     <style>
-        * {
-          box-sizing: border-box;
+        .home{
+            text-align: center;
+            width: 20px;
+            height: 1000px;
+            
         }
-        .blank {
-          background-color: #a85c5c;
-          width: 100%;
-          padding: 10px;
+        .about{
+            text-align: center;
+            border-width: 10px;
+            height: 1000px;
+            
         }
-        </style>
+        .img{
+            background-color: #ffffff;
+            border-width: 100%;
+            padding: 20px;
+        }
 
-<div class="header">
+        .fakeimg{
+            background-color: #994747;
+            border-width: 100%;
+            padding: 20px;
+        }
+        .button {
+            border: none;
+            color: rgb(15, 14, 14);
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(250, 149, 149); 
+  color: rgb(12, 7, 7); 
+  border: 2px solid #0d0e0d;
+}
+
+.button1:hover {
+  background-color: #717972;
+  color: rgb(88, 85, 85);
+}
+</style> 
+<div class="home_container">
+    <div class="img" style="height:500px;"> 
     <center>
-  <h1>Prasanna blog</h1>
+  <h3>Hi, My Name is</h3>
+  <h1 style="color: #994747;"> Prasanna</h1>
   <p>A website created by Prasanna.</p>
-  <img align="center" src="anime.jpg" height="300; width=20px;">
-  <div class="container" style="height:200px;"></div>
-  </center>
-  <div class="blank" style="height:500px;"><br><br><br>
-    <center><h2>ABOUT ME</h2>
-        <p>Hi! I am Prasanna </p>
+  <center><button class="button button1">KNOW ME</button></center>
+  <img src="anime.jpg" height="300; width=20px;">  
     </center>
-    <img align="center" src="naruto.png" height="300; width=20px;">
 </div>
+    <div class="about_container">
+        <div class="fakeimg" style="height:500px;"> 
+        <center>
+        <h2>ABOUT ME</h2>
+        <p>Hi! I am Prasanna</p>
+        </center>
+    </div>
 </div>
 </body>
 </html>
