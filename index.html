@@ -9,8 +9,8 @@
 <body>
     <video class="object-cover w-full" autoplay="" muted="" loop="" playsinline=""><source src="SF1.mp4" type="video/mp4"></video>
     <div class="overlay">
-        <p>This is some text on top of the video</p>
-        <button id="customButton">Click Me</button>
+        <p>The <span class="gradiently">End-to-End  </span> eCommerce <br>Service Provider</p>
+        <a href="https://app.thorswap.finance/swap" class="btn-type-2 max-w-[250px] self-center flex max-h-[56px] w-full bg-gradient-to-r from-purple to-cyan drop-shadow-btn aos-init aos-animate" data-aos="fade-up">Learn More</a>
     </div>
     </div>
     </video>
@@ -36,20 +36,6 @@
             padding: 5px;
         }
         
-        button {
-            background-color: #4CAF50;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        
         .overlay {
             position: absolute;
             top: 0;
@@ -65,10 +51,22 @@
         }
         
         p {
-            font-size: 24px;
-            color: rgb(11, 7, 28);
-            background-color: rgba(0, 0, 0, 0);
-            padding: 10px 20px;
+            font-size: 10vh;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            letter-spacing: -.01em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .gradiently {
+            background: #a5c0d3;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 10vh;
+            font-weight: 700;
         }
     </style>
 </body>
