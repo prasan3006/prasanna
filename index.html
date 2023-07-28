@@ -33,6 +33,12 @@
     </div>
     </video>
     </div>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header")
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 
     <style>
         * {
@@ -67,6 +73,15 @@
             display: flex;
             list-style: none;
             padding-top: 13.5px;
+        }
+        
+        header.sticky {
+            padding: 5px 100px;
+            background: #fff;
+        }
+        
+        header.sticky li a {
+            color: #000;
         }
         
         .navbar li {
