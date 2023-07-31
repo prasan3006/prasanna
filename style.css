@@ -20,7 +20,7 @@ header {
     align-items: center;
     transition: 0.6s;
     padding: 40px 100px;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .logo {
@@ -96,9 +96,7 @@ header .navbar li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    pointer-events: visible;
-    z-index: 1;
-    /* Add z-index to bring the overlay above the video */
+    z-index: 1000;
 }
 
 p {
@@ -121,14 +119,6 @@ p {
     font-size: 7vh;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-}
-
-.sub-text {
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 5vh;
-    letter-spacing: 2px;
-    color: #c3c8c3;
 }
 
 .btn-2 {
