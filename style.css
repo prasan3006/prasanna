@@ -20,7 +20,7 @@ header {
     align-items: center;
     transition: 0.6s;
     padding: 40px 100px;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .logo {
@@ -96,8 +96,9 @@ header .navbar li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    pointer-events: none;
-    /* Allow clicks to go through the overlay to the video controls */
+    pointer-events: visible;
+    z-index: 1;
+    /* Add z-index to bring the overlay above the video */
 }
 
 p {
@@ -125,7 +126,6 @@ p {
 .sub-text {
     font-size: 15px;
     font-weight: normal;
-    text-decoration: none;
     line-height: 5vh;
     letter-spacing: 2px;
     color: #c3c8c3;
@@ -146,11 +146,15 @@ p {
 }
 
 .btn-2:hover {
-    background-color: #4dbad6;
+    background-color: #348cf4;
+    /* Change the background color on hover */
     transform: scale(1.05);
+    /* Add a slight scale effect on hover */
 }
 
 .btn-2:active {
-    background-color: #348cf4;
+    background-color: #4dbad6;
+    /* Change the background color when clicked */
     transform: scale(0.95);
+    /* Add a slight scale effect when clicked */
 }
