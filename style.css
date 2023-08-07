@@ -146,3 +146,42 @@ p {
     background-color: #4dbad6;
     transform: scale(0.95);
 }
+
+.container {
+    background-color: linear-gradient(269.2deg, #4dbad6 13.54%, #348cf4 50.52%, #7b48e8 85.94%);
+    padding: 10vh;
+    height: 10vh;
+    border-radius: 20px;
+}
+
+label {
+    position: relative;
+    color: #fff;
+}
+
+input[type="text"] {
+    border: none;
+    width: 460px;
+    height: 100px;
+    padding: 0 30px;
+}
+
+.submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: teal;
+    color: white;
+    padding: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transition: .8s;
+    background-color: #727272;
+}

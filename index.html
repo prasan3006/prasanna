@@ -8,7 +8,7 @@
 
 <body>
     <video class="object-cover w-full" autoplay="" muted="" loop="" playsinline=""><source src="SF1.mp4" type="video/mp4"></video>
-    <img src="0002.png" width="100%;" height="100%;">
+
     <div class="overlay">
         <header>
             <div class="logo">
@@ -33,11 +33,41 @@
         <div>
             <a href="https://strategyfox.in" class="btn-2">Learn More</a></div>
     </div>
+    <img src="0002.png" width="100%;" height="100%;">
+    <div class="container">
+        <form name="submit-to-google-sheet" onsubmit="downloadPDF()">
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Email" required><br><br>
+            <button type="submit">Send</button>
+        </form>
     </div>
+    </div>
+    </div>
+
     <script type="text/javascript">
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header")
             header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        function downloadPDF() {
+            // Code to trigger the PDF download
+            var link = document.createElement('a');
+            link.href = 'Carousel.pdf';
+            link.download = 'downloaded_file.pdf';
+            link.click();
+        }
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz__bjSczqowEmYsVYJE6nR3wFJvFXsPMoTmf2y6YfMJtNMAL8X7Eophk5INwKq6Fk0ZQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
         })
     </script>
 </body>
