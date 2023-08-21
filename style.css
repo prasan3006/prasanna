@@ -15,7 +15,7 @@ header {
     left: 0;
     width: 100%;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
     cursor: pointer;
     column-gap: 10vh;
     align-items: center;
@@ -60,6 +60,14 @@ header .navbar li a:hover {
     color: #4dbad6;
 }
 
+.btn-container {
+    position: absolute;
+    top: 32px;
+    /* Adjust the top value as needed */
+    right: 30px;
+    /* Adjust the right value as needed */
+}
+
 .btn {
     border: 1.5px solid #4dbad6;
     border-radius: 156px;
@@ -101,10 +109,10 @@ header .navbar li a:hover {
 }
 
 p {
-    padding-block-end: 45vh;
+    padding-block-end: 52vh;
     font-size: 7vh;
     font-weight: 700;
-    padding-top: 12vh;
+    padding-top: 0px;
     color: #ffffff;
     text-align: center;
     letter-spacing: 0;
@@ -120,6 +128,11 @@ p {
     font-size: 7vh;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+}
+
+.btn-2-container {
+    position: absolute;
+    top: 85%;
 }
 
 .btn-2 {
@@ -152,6 +165,8 @@ p {
     padding: 10vh;
     height: 10vh;
     border-radius: 20px;
+    text-align: center;
+    margin: 20px;
 }
 
 label {
@@ -188,11 +203,6 @@ input[type="text"] {
 .submit:hover {
     transition: .8s;
     background-color: #727272;
-}
-
-.container {
-    text-align: center;
-    margin: 20px;
 }
 
 #email {

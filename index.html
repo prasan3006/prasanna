@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,13 +8,10 @@
 </head>
 
 <body>
-    <video class="object-cover w-full" autoplay="" muted="" loop="" playsinline=""><source src="sf2.mp4" type="video/mp4"></video>
+    <video class="object-cover w-full" autoplay="" muted="" loop="" playsinline=""><source src="Newsf.mp4" type="video/mp4"></video>
 
     <div class="overlay">
         <header>
-            <div class="logo">
-                <img src="Logo Transparent PNG.png" width="230px;" height="40vh;">
-            </div>
             <ul class="navbar">
                 <li><a href="#">Overview</a></li>
                 <li><a href="#">Services</a></li>
@@ -23,17 +21,16 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <div>
+            <div class="btn-container">
                 <a href="https://strategyfox.in" class="btn">Learn More</a></div>
         </header>
         <p>The <span class="gradiently">End-to-End  </span> eCommerce <br>Service Provider<br>
-            <a style="font-size: 15px; font-weight: 100;  line-height: 6vh; letter-spacing: 0; text-decoration: none;  color: #c3c8c3;">We partner with potential brands and turbo charge their growth. A one stop solution for all business needs.</a>
+            <a style="font-size: 15px; font-weight: 100;  line-height: 0px; letter-spacing: 0; text-decoration: none;  color: #c3c8c3;">We partner with potential brands and turbo charge their growth. A one stop solution for all business needs.</a>
         </p>
-        <br>
-        <div>
+        <div class="btn-2-container">
             <a href="https://strategyfox.in" class="btn-2">Learn More</a></div>
     </div>
-    <img src="0002.png" width="100%;" height="100%;">
+
     <div class="container">
         <form name="submit-to-google-sheet" onsubmit="downloadPDF()">
             <label for="email">Email</label>
@@ -51,7 +48,11 @@
         })
 
         function downloadPDF() {
-            // Code to trigger the PDF download
+            var emailInput = document.getElementById("email").value;
+            if (emailInput !== "") {
+                alert("Thank you for submitting your email!");
+            }
+
             var link = document.createElement('a');
             link.href = 'Carousel.pdf';
             link.download = 'downloaded_file.pdf';
